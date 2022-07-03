@@ -1,0 +1,12 @@
+div.product2{
+    margin:50px;
+    width:100px;
+    box-sizing:border-box;
+    overflow:hidden;
+    border-radius: 10px;
+    background-color: #f2f3f4;
+ 
+  }
+  .product:hover{
+    transform:scale(1.2);
+  }
