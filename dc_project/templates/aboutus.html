@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>GiveHope &mdash; Website Template by Colorlib</title>
+    <title>INCARNATE &mdash; Let's fight it hand in hand</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -22,26 +22,27 @@
     <link rel="stylesheet" href="{% static 'css/button.css'%}?version=55"/>
     <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
     <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/about.css'%}?version=55"/>
 
   </head>
   <body>
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">GiveHope</a>
+      <a class="navbar-brand" href="index.html">INCARNATE</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="how-it-works.html" class="nav-link">How It Works</a></li>
-          <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
-          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-          <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+              <li class="nav-item"><a href="{% url 'index' %}" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="{% url 'educateandempower' %}" class="nav-link">Educate and Empower</a></li>
+              <li class="nav-item"><a href="{% url 'donate' %}" class="nav-link">Donate</a></li>
+              <!--li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li-->
+              <li class="nav-item"><a href="{% url 'blog' %}" class="nav-link">Blog</a></li>
+              <li class="nav-item active"><a href="{% url 'aboutus' %}" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -145,84 +146,38 @@
 
 
 
-
-
-
-
-
-
       <div class="site-section bg-light">
         <div class="row mb-3 justify-content-center">
           <div class="col-md-8 text-center">
-            <h2>How To Use </h2>
-            <p> Let us learn how to use the product which would soak the blood shed during periods. Using such products 
-              would contribute in the maintainance of proper menstrual hygiene .</p>
+            <h2>Core Team </h2>
+            <p></p>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="product2">
-              <div class="pro-entry">
-                <img src="static/images/ed_img1.jfif" alt="no img" class="img-pad" width=320 height=250>
-                <h3>Sanitary Napkins</h3>
-                <p class="how-text" text-color="black">These are absorbent materials that catch menstrual blood when attached to the inside of girls underwear
-                  Some pads have extra material called 'wings' which helps to hold the pad in place and prevents leaking.
-                  <span class="dots" id="id-dots1">........</span> <span class="moreText" id="id-moretext1">Pads should be changed every 3-4 hours, even when there is a lighter flow, this helps 
-                    to prevent bacterial growth and stops odor. If the flow rate is heavier, then this period often reduces.
-                    Few of the girls have heavier blood flow while others have lighter flow during their periods. And most girls have ligher days and heavier days.
-                    Pads or sanitary napkins can vary by size or absorbency. Depending on these factors, there are different kinds of sanitary napkins: super, slender,
-                    overnight,scented,mini,maxi. So, to find a right pad, there is a need to do a little bit of experimentation. 
-                  </span>
-                </p>
-                <button class="read-more" id="id-btn1" onclick="moreless('1')">Read More</button>
-              </div>
-            </div>
-            
-              <div class="row">
-                <div class="product2">
-                  <div class="pro-entry">
-                    <img src="static/images/ed_img3.jfif" alt="no img" class="img-pad" width=320 height=250>
-                    <h3>Menstrual Cups</h3>
-                    <p class="how-text" text-color="black">A menstrual cup is a funnel shaped cup made of rubber or silicon that can be inserted into the vagina to catch and collect. 
-                      Unlike tempons, it is not an absorbemt material, the cup only catches the blood when it flows out of the vagina. The menstrual cup is mad
-                      <span class="dots" id="id-dots3">........</span> <span class="moreText" id="id-moretext3">Menstrual cups are safer than tempons, are affordable, 
-                        holds more blood than pads or tempons,, are better for environment, can be worn with UID. Depending on the rate of flow, a menstrual cup needs to be cahanged every 6-12 hours.
-                        A menstrual cup may be greased, to avoid feeling uncomfortable when applied for the first time. To apply menstrual cup, wash hands properly,
-                          apply water to the rim of the cup, tightly fold the menstrual cup in half, hoding it in a hand with rim facing up, insert the cup, rim up 
-                          in vagina, once inserted, rotate it. It will spring open to create an airtight seal to stop leaks. 
-                          <br>How to take menstrual cup out? Wash hand, place index finger and thumb into the vagina Pull the stem of the cup gently until reaching the base 
-                          Pinch the base to release the seal and pull down to remove the cup.Once, its out, empty the cup into the sink.
-                        </br>Instruction that comes with the cup explain this, please refer it for guidance.
-                      </span>
-                    </p>
-                    <button class="read-more" id="id-btn3" onclick="moreless('3')">Read More</button>
+        <div class="row-core">
+                <div class="core-card">
+                  <img src="static/images/Aanchal_pic.png" alt="no img" class="img-pad" width=200 height=150>
+                  <div class="core">
+                      <h3>Aanchal</h3>
+                      <p class="how-text" text-color="black">Final-year student, Department of Electrical Engineering, IIT Jodhpur
+                      </p>
+                      
                   </div>
+              </div>
+              <div class="core-card">
+                <img src="static/images/div_pp.jpeg" alt="no img" class="img-pad" width=200 height=150>
+                <div class="core">
+                  
+                  <h3>Divyanshi Jagyetia</h3>
+                  <p class="how-text" text-color="black">Final-year student, Department of Bioscience and Bioengineering, IIT Jodhpur
+                  </p>
+                  
                 </div>
-            
+              </div>
+              
+              
           </div>
         </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="row mt-5">
-          <div class="col-md-12 mb-5 text-center mt-5">
-            <h2>Core Team</h2>
-          </div>
-
+    </div>
         <!--div class="col-md-6 col-lg-3">
           <div class="block-38 text-center">
             <div class="block-38-img">
@@ -237,50 +192,12 @@
             </div>
           </div>
         </div-->
-        <div class="core">
-          <div class="block-38 text-center">
-            <div class="block-38-img">
-              <div class="block-38-header">
-                <img src="static/images/div_pp.jpeg" alt="no img" >
-                <h3 class="block-38-heading">Divyanshi Jagetiya</h3>
-                <p class="block-38-subheading">President hi heloo blah bghefskcdfgbhk</p>
-              </div>
-              
-            </div>
-          </div>
-        </div>
+        
 
-        <div class="core">
-          <div class="block-38 text-center">
-            <div class="block-38-img">
-              <div class="block-38-header">
-                <img src="images/person_3.jpg" alt="no img" >
-                <h3 class="block-38-heading">Patrick Marx</h3>
-                <p class="block-38-subheading">Marketer</p>
-              </div>
-               
-            </div>
-          </div>
-        </div>
+        
 
-        <!--div class="col-md-6 col-lg-3">
-          <div class="block-38 text-center">
-            <div class="block-38-img">
-              <div class="block-38-header">
-                <img src="images/person_4.jpg" alt="Image placeholder">
-                <h3 class="block-38-heading">Mike Coolbert</h3>
-                <p class="block-38-subheading">Partner</p>
-              </div>
-              <div class="block-38-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-              </div>
-            </div>
-          </div>
-        </div-->
-      </div>
-
-    </div>
-  </div>
+        
+        
 
 
   

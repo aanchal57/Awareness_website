@@ -1,7 +1,7 @@
 .moreText{
     display : none;
   }
-  .pro-entry button.read-more{
+  button.read-more{
     background-color :#fa5e10;
     color :black;
     border: none;
@@ -35,7 +35,7 @@
 }
 div.product{
   margin:20px;
-  width:400px;
+  width:350px;
   box-sizing:border-box;
   overflow:hidden;
   border-radius: 10px;
@@ -113,4 +113,23 @@ div.res-1{
 }
 .read-card:hover{
   color:black;
+}
+div.don-card{
+  margin:50px;
+  width:450px;
+  height:450px;
+  box-sizing:border-box;
+  overflow:hidden;
+  border-radius: 10px;
+  background-color: #f2f3f4;
+  padding:10px;
+  box-shadow:2px 7px 10px rgb(247, 200, 114);
+  transition:1s;
+}
+.don-card:hover{
+  transform:scale(1.2);
+  background-color:#f7ca44;
+}
+div.don{
+  text-align: center;
 }
