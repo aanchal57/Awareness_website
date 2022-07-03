@@ -8,3 +8,13 @@ def index(request):
 def educateandempower(request):
     return render(request,"educateandempower.html")
 
+def aboutus(request):
+    return render(request,"aboutus.html")
+
+def blog(request):
+    return render(request,"blog.html")
+
+def openpost(request):
+    return render(request,"openpost.html")
+
+    
