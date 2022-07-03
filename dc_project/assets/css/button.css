@@ -1,16 +1,19 @@
 .moreText{
     display : none;
   }
-  .pro-entry button.read-more{
-    background-color :#f7ca44;
-    color :#fcfaf6;
+  button.read-more{
+    background-color :#fa5e10;
+    color :black;
     border: none;
     font-size : 15px;
-    cursor:pointer
+    cursor:pointer;
+    border-radius: 10px;
+    
   }
   button.read-more:hover{
     background-color:black;
     color:white;
+    border-radius: 10px;
   }
   
   .how-text{
@@ -43,8 +46,90 @@ div.product{
 }
 .product:hover{
   transform:scale(1.2);
+  background-color:#f7ca44;
 }
 div.pro-entry{
   text-align: center;
 }
+div.sub1-section{
+  background-color:rgb(253, 247, 247);
+  display:flex;
+  justify-content: space-between;
+  padding:40px;
+  box-sizing:border-box;
+  border-radius: 10px;
+  margin:5px;
+  
+}
+div.sub1-section:hover{
+  background-color:#f5da8a;
+}
 
+div.sub1-section img{
+    height:200px;
+    width:200px;
+}
+li.li-text{
+  font-size:10px;
+}
+.text-1{
+  font-size:17px;
+}
+.how-text-row1{
+  line-height: 16px;
+  font-size:15px;
+  color:rgb(32, 32, 32);
+}
+.sub1-text button.read-sub-more{
+  background-color :#f00f0f;
+  color :#fcfaf6;
+  border: none;
+  font-size : 15px;
+  cursor:pointer;
+  border-radius: 10px;
+}
+button.read-sub-more:hover{
+  background-color:black;
+  color:white;
+  border-radius: 10px;
+}
+.sub-more{
+  display:none;
+}
+div.res-1{
+  background-color:none;
+  display:flex;
+  justify-content: space-between;
+  padding:40px;
+  margin:5px;
+  
+}
+.more-card-box{
+  display : none;
+}
+.read-card{
+  display:inline;
+  color:#f7ca44;
+}
+.read-card:hover{
+  color:black;
+}
+div.don-card{
+  margin:50px;
+  width:450px;
+  height:450px;
+  box-sizing:border-box;
+  overflow:hidden;
+  border-radius: 10px;
+  background-color: #f2f3f4;
+  padding:10px;
+  box-shadow:2px 7px 10px rgb(247, 200, 114);
+  transition:1s;
+}
+.don-card:hover{
+  transform:scale(1.2);
+  background-color:#f7ca44;
+}
+div.don{
+  text-align: center;
+}

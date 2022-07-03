@@ -38,10 +38,10 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a href="{% url 'index' %}" class="nav-link">Home</a></li>
           <li class="nav-item active"><a href="{% url 'educateandempower' %}" class="nav-link">Educate and Empower</a></li>
-          <li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+          <li class="nav-item"><a href="{% url 'donate' %}" class="nav-link">Donate</a></li>
           <!--li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li-->
-          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="{% url 'blog' %}" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="{% url 'aboutus' %}" class="nav-link">About</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </div>
@@ -116,7 +116,7 @@
                 <img src="static/images/ed_img3.jfif" alt="no img" class="img-pad" width=320 height=250>
                 <h3>Menstrual Cups</h3>
                 <p class="how-text" text-color="black">A menstrual cup is a funnel shaped cup made of rubber or silicon that can be inserted into the vagina to catch and collect. 
-                  Unlike tempons, it is not an absorbemt material, the cup only catches the blood when it flows out of the vagina. The menstrual cup is mad
+                  Unlike tempons, it is not an absorbemt material, the cup only catches the blood when it flows out of the vagina. 
                   <span class="dots" id="id-dots3">........</span> <span class="moreText" id="id-moretext3">Menstrual cups are safer than tempons, are affordable, 
                     holds more blood than pads or tempons,, are better for environment, can be worn with UID. Depending on the rate of flow, a menstrual cup needs to be cahanged every 6-12 hours.
                     A menstrual cup may be greased, to avoid feeling uncomfortable when applied for the first time. To apply menstrual cup, wash hands properly,
@@ -139,116 +139,250 @@
     <div class="row mb-3 justify-content-center">
       <div class="col-md-8 text-center">
         <h2>Prevent It. Cure It. </h2>
-        <p> Let us learn about few ways to prevent or cure menstrual problems.</p>
+        <p> Let us learn about kinds of menstrual problems, its symptoms, causes and thereafter,
+          we would learn some of the prevention and cures to these menstrual problems.</p>
       </div>
     </div>
-  </div> 
-  <!--div class="site-section">
-    <div class="row mb-3 justify-content-center">
-      <div class="col-md-8 text-center">
-        <h2>Prevent It. Cure It. </h2>
-        <p> Let us learn about few ways to prevent or cure menstrual problems.</p>
-      </div>
-    </div>
+  
+  
     
     <div class="container">
-      
-      <div class="row align-items-center mb-5">
-
-        <div class="col-md-7 order-md-2 mb-5 mb-md-0" >
-          <img src="/static/images/ed_img1.jfif" alt="" class="img-fluid" width="300" height="100">
-        </div>
-
-        <div class="col-md-5 pr-md-5 mb-5 order-md-1">
-          <div class="block-41">
-            <h2 class="block-heading-mb-3">Sanitary Napkins</h2>
-            <div class="block-41-text">
-              <p class="how-text">These are absorbent materials that catch menstrual blood when attached to the inside of girls underwear
-                Some pads have extra material called 'wings' which helps to hold the pad in place and prevents leaking.
-                Pads should be changed every 3-4 hours, even when there is a lighter flow, this helps 
-    
-                to prevent bacterial growth and stops odor.<span class="dots" id="id-dots1">........</span> <span class="moreText" id="id-moretext1"> If the flow rate is heavier, then this period often reduces.
-                  Few of the girls have heavier blood flow while others have lighter flow during their periods. And most girls have ligher days and heavier days.
-                  Pads or sanitary napkins can vary by size or absorbency. Depending on these factors, there are different kinds of sanitary napkins: super, slender,
-                  overnight,scented,mini,maxi. So, to find a right pad, there is a need to do a little bit of experimentation. 
-                </span>
-              </p>
-              <button class="read-more" id="id-btn1" onclick="moreless('1')">Read More</button>
-            </div>
-          </div>
-        </div>
+      <div class="sub1-section">
+        <div class="sub1-text">
+          <h2 class="block-41-heading mb-3">Painful Periods (dysmenorrhea)<h2>
+          <p class="text-1">Painful periods refers to menstrual cramps that people experience before and during their periods.
+            When pain is primary it is a direct result of menstruation. The secondary pain results due to certain health conditions
+            such as pelvic inflammatory diseases, endometriosis,etc. It has been found that in 10% people who menstruate, the pain and discomfort is
+            severe enough to affect their daily life for 1-3 days per month.
+          </p>
+          <span class="text-1" id="sub-head1"> SYMPTOMS AND CAUSES, PREVENTION, TREATMENT...</span> 
+          <span class="sub-more" id="sub-text-more1">
+          <h4 class="block-41-heading mb-3">Symptoms and Causes</h4>
+          <p class="how-text-row1">Menstrual cramps is recognised with a throbbing, cramping pain in the lower abdomen.
+            Other symptoms of menstrual cramp includes pain in the lower back and thighs, sweating, nausea and vomitting, faintness and diziness,  bloating, headaches, diarrhea or loose stools,
+            constipation, etc.
+          <br>People should consult a doctor if blood clot are bigger than a quarter, or if symptoms get severe or if pain is present also for the times 
+          other than periods</br></p>
+          <p class="how-text-row1">Menstrual cramps tend to begin after ovulation, when the ovaries release an egg that travels down the fallopian tube.
+            <br>During Menstruation, there is irregular contraction and relaxation of the muscles of the womb.
+            Although, this motion helps the womb expel the unwanted tissues and blood, it can cause severe discomfort.</br></p>
+          <h4 class="block-41-heading mb-3">Prevention</h4>
+            <p class="how-text-row1">Menstrual cramps can not be eliminated completed but its chances can be reduced by adopting certain
+              lifestyle measures. This includes excercising regularly, practicing meditation, yoga, quitting smoking, etc.
+            </p>
+            <h4 class="block-41-heading mb-3">Treatment</h4>
+            <p class="how-text-row1">OTC pain relievers, NSAIDs such as ibuprofen can ease the menstrual cramps. Hormonal birth 
+              control pills can be taken after doctor prescription, these pills prevent ovulation and reduces severity of cramps.
+              <br>If the cramps are due to secondary dysmenorrhea, that is due to a medical condition. Then, a surgery by doctor's approval to reomve tissue
+              might be helpful.</br></p>
+            </span>
+          <button class="read-sub-more" id="id-read1" onclick="showmore('1')">Read More</button>
         
-      </div> 
-
-      <div class="row align-items-center mb-5">
-        <div class="col-md-7 mb-5 mb-md-0">
-          <img src="/static/images/ed_img2.jpg" alt="" class="img-fluid" width="300" height="100">
         </div>
-
-        <div class="col-md-5 pl-md-5 mb-5">
-          <div class="block-41">
-            <h2 class="block-41-heading mb-3">Tempons</h2>
-            <div class="block-41-text">
-              <p class="how-text">These are absorbent materials that catch menstrual blood when attached to the inside of girls underwear
-                Some pads have extra material called 'wings' which helps to hold the pad in place and prevents leaking.
-                Pads should be changed every 3-4 hours, even when there is a lighter flow, this helps 
-                  to prevent bacterial growth and stops odor.<span class="dots" id="id-dots2">........</span> <span class="moreText" id="id-moretext2"> If the flow rate is heavier, then this period often reduces.
-                  Few of the girls have heavier blood flow while others have lighter flow during their periods. And most girls have ligher days and heavier days.
-                  Pads or sanitary napkins can vary by size or absorbency. Depending on these factors, there are different kinds of sanitary napkins: super, slender,
-                  overnight,scented,mini,maxi. So, to find a right pad, there is a need to do a little bit of experimentation. 
-                </span>
-              </p>
-              <button class="read-more" id="id-btn2" onclick="moreless('2')">Read More</button>
-              
-            </div>
-          </div>
-        </div>
+        <img src="/static/images/img_prb1.jpg" alt="" >
+      </div>
+      <div class="sub1-section">
+        <div class="sub1-text">
+          <h2 class="block-41-heading mb-3">Absent Periods (Amenorrhea)<h2>
+          <p class="text-1">Amenorrhea is the absence of menstruation during the reproductive years,which are from adolescence through menopause.
+          There are two types of Amenorrhea, primary and secondary. 
+          <br>Primary Amenorrhea is when period do not start. If period do not start by the age of 16 years, then the person should consult the doctor.
+          <br>Secondary Amenorrhea is when period starts but cease at some point of time.This is normal during pregnancy or breastfeeding. A doctor will consider secondary amenorrhea if an individual used to have regular periods and then does not have it for 3 months
+          or used to have irregular periods and then does not have any for 6 months.
+          </br>
+          </p>
+          <span class="text-1" id="sub-head2"> SYMPTOMS AND CAUSES, DIAGNOSIS,PREVENTION, TREATMENT...</span> 
+          <span class="sub-more" id="sub-text-more2">
+          <h4 class="block-41-heading mb-3">Symptoms and Causes</h4>
+          <p class="how-text-row1">The main symptom of absent periods is a lack of menstruation. However, depending on the cause, other symptoms may occur.
+            For those suffering from primary amenorrhea, there may be a lack of breast development. Anyone who experiences these symptoms should seek medical guidance.
+            In case of secondary amenorrhea, main symptoms include hair loss, headache, vision changes, milky nipple discharge or facila hair growth.
+          <p class="how-text-row1">Causes differ for primary and secondary amenorrhea.<br>In case of Primary amenorrhea, the common cause is a family history of delayed menstruation.However there can be genetical 
+          conditions that stops ovaries to work properly that includes <a href="https://en.wikipedia.org/wiki/Turner_syndrome">turner syndrome</a>, 
+          <a href="https://en.wikipedia.org/wiki/Androgen_insensitivity_syndrome">androgen insensitivity syndrome</a> or <a href="https://en.wikipedia.org/wiki/Mullerian_anomalies#:~:text=The%20first%20stage%20of%20Mullerian,or%20vaginal%20hypoplasia%20or%20agenesis.">
+            Mullrian defects</a>In this case, reproductive development will not follow the normal pattern, and menstruation may not be possible.
+            <br>For secondary amenorrhea, the main causes includes a <a href="https://en.wikipedia.org/wiki/Gynaecology">gynecological disorder</a>, 
+            serious illness(these includes long term health conditions), physical stress or having a very low body mass index,
+            some stringnent excercises and few medications like <a href="https://en.wikipedia.org/wiki/Antipsychotic">antipsychotics</a>,
+            cancer chemotherapy, antidepressants, blood prssure drugs also contribute to the cause.</br> 
+          </p>
+          <h4 class="block-41-heading mb-3">Diagnosis</h4>
+            <p class="how-text-row1">Contact your healthcare provider if you miss a period. Your doctor will inquire about your symptoms and health background. You can begin prenatal care if amenorrhea was brought on by pregnancy. 
+              If the symptoms of menopause are distressing, there is assistance available. Menopause-related missed periods typically start in your 40s. 
+              A physical examination and a pelvic examination will be done by your doctor.<br> Some tests that doctor may suggest includes pregnancy tests,blood tests, MRI or genetic testing.
+            </p>
+          <h4 class="block-41-heading mb-3">Prevention</h4>
+            <p class="how-text-row1">Absent period can be prevented by living a healthy lifestyle. Try to Maintain a healthy weight and eat a healthy diet, a regular and adequate sleep,
+              regual gynecological appointments and check on your menstrual cycle.
+            </p>
+            <h4 class="block-41-heading mb-3">Treatment</h4>
+            <p class="how-text-row1">Treatiment depends on the cause of amenorrhea.<br>Depending on the patient's age and the results of the ovarian function test, 
+              treatment for primary amenorrhea may begin with cautious waiting. Periods may begin on time if there is a family history of late menstruation.
+              Surgery could be required if there are hereditary or physical issues with the reproductive organs. Normal menstrual cycles won't necessarily result from this, though.
+              <br>In case of secondary ammenorrhea teatments depend on the cause.Losing weight through dieting and exercise (if excess weight is the cause),Gaining weight through an individualized diet plan (if extreme weight loss is the cause), Stress management techniques,
+              changing exercise levels,hormonal treatment (medication), as prescribed by your healthcare provider, surgery (in rare cases). Doctor may prescribe 
+              treatments like estrogen therapy or strength training to help with the side affects.</br>
+             </p>
+            </span>
+          <button class="read-sub-more" id="id-read2" onclick="showmore('2')">Read More</button>
         
-      </div> 
-
+        </div>
+        <img src="/static/images/img_prb2.jpg" alt="" >
+      </div>
+      <div class="sub1-section">
+        <div class="sub1-text">
+          <h2 class="block-41-heading mb-3">Heavy Periods (Menorrhagia)<h2>
+          <p class="text-1">Menstrual bleeding that is very heavy or prolonged is referred to as menorrhagia.Menorrhagia patients may suffer excessive bleeding that requires them to 
+            go through one or more tampons or pads every hour for several hours in a row or bleeding that lasts longer than seven days. Heavy menstrual bleeding is very common, and about one-third of females seek treatment for it.
+             However, it can still interrupt daily life and, in some cases, signify a more serious health problem. If not treated, it can cause anemia.
+          </p>
+          <span class="text-1" id="sub-head3"> SYMPTOMS AND CAUSES, DIAGNOSIS, PREVENTION, TREATMENT...</span> 
+          <span class="sub-more" id="sub-text-more3">
+          <h4 class="block-41-heading mb-3">Symptoms and Causes</h4>
+          <p class="how-text-row1">The symptoms of menorrhagia includes-a heavy menstrual flow that soaks through one or more sanitary pads or tampons every hour for several consecutive hours,
+            heavy bleeding that requires a person to use more than one period product at a time,the need to change pads or tampons in the middle of the night
+            menstrual flow or bleeding lasting more than a week,the passage of blood clots that are the size of a quarter or larger
+            symptoms of anemia, including fatigue and shortness of breath,constant lower abdominal and pelvic pain
+            the inability to perform regular daily activities because of bleeding</p>
+          <p class="how-text-row1">Causes of menorrhagia can be divided into three categories: uterine-related problems, hormone-related problems, 
+            and other illnesses or disorders. Possible causes are <a href="https://en.wikipedia.org/wiki/Uterine_fibroid">uterine fibroids</a>, 
+             <a href="https://en.wikipedia.org/?title=Uterine_polyps&redirect=no">uterine polyps</a>, <a href="https://en.wikipedia.org/wiki/Ovulation">irregular ovulation</a>,
+             <a href="https://en.wikipedia.org/wiki/Adenomyosis">adenomyosis</a>,<a href="https://en.wikipedia.org/wiki/Intrauterine_device">Non-hormonal intrauterine device</a>,
+              <a href="https://en.wikipedia.org/wiki/Pelvic_inflammatory_disease">pelvic inflammatory diseases</a>, pregnancy complications, inherited bleeding disorders and certain medications.
+              <br>Other health conditions that can cause menorrhagia includeTrusted Source thyroid disorders, endometriosis, and liver or kidney disease.<br>
+            </p>
+          <h4 class="block-41-heading mb-3">Diagnosis</h4>
+            <p class="how-text-row1">When a doctor suspects menorrhagia, they will inquire about the patient's symptoms, medical history, and menstrual cycle patterns. They might perform a physical examination as well.
+            <br>Menorrhagia can be identified using the following tests:
+            <br>blood tests to look for coagulation issues, thyroid issues, and anaemia
+            <br>Endometrial biopsy to check the lining of the uterus for cellular abnormalities
+            <br>Cancer Pap smear to check for cervical infection, inflammation, and malignancy
+            <br>Ultrasound to examine the uterus, cervix, and ovaries as well as other pelvic organs
+            <br>Ultrasound is used during a sonohysterogram to check for abnormalities after injecting fluid into the uterus.
+            <br>Dilation and curettage, which a doctor may employ to find and treat anomalies.</br>
+            </p>
+          <h4 class="block-41-heading mb-3">Prevention</h4>
+            <p class="how-text-row1">To determine any underlying causes, anyone experiencing menorrhagia should consult a physician.
+              Some home remedies and helpful tools can help minimise symptoms and make a heavy period easier to manage in addition to working with a doctor.
+              It can be reduced by adopting certain lifestyle measures. This includes excercising regularly, get plenty of rest,using menstrual cups, diet and supplements.
+              Certain home remedies like ginger capsules, myrtle food syrup and pomegranate power capsules are helpful in this regard.
+            </p>
+            <h4 class="block-41-heading mb-3">Treatment</h4>
+            <p class="how-text-row1">The underlying cause of the bleeding and the specific situation will determine the menorrhagia treatment options.
+              The patient's age, general health, medical history, preferences, and needs with regard to menstruation will all be taken into account by the doctor.
+              <br>Drug therapy includes iron supplements to treat anemia,birth control pills to make periods more regular, reduce bleeding, or stop bleeding completely,
+              tranexamic acid (Lysteda), a prescription medication that a person takes each month at the time of bleeding to help reduce blood loss,
+              hormone therapy with drugs containingTrusted Source estrogen, progesterone, or both to reduce the amount of bleeding,
+              planting a hormonal IUD in the lining of the uterus, which can help reduce bleeding and cramping,medications that help treat the underlying cause of heavy menstrual bleeding.
+           
+              <br>Surgical treatments are suggested by doctors depending on the cause and extent of the bleeding, the age and health of the person, and their personal preference and expectations.
+                Available surgical options are <a href="https://en.wikipedia.org/wiki/Dilation_and_curettage">Dilation and curettage</a>,
+                <a href="https://en.wikipedia.org/wiki/Uterine_artery_embolization">Uterine artery embolization</a>,
+                  <a href="https://en.wikipedia.org/wiki/Hysteroscopy">Operative hysteroscopy</a>,<a href="https://en.wikipedia.org/wiki/High-intensity_focused_ultrasound#:~:text=High%2Dintensity%20focused%20ultrasound%20(HIFU,via%20thermal%20and%20mechanical%20mechanisms.">Focused ultrasound ablation</a>,
+                  <a href="https://en.wikipedia.org/wiki/Uterine_myomectomy">Myomectomy</a>,
+                  <a href="https://en.wikipedia.org/wiki/Endometrial_ablation">Endometrial abation</a>,<a href="https://en.wikipedia.org/wiki/Hysterectomy"> Hysterectomy</a>.
+          </br></p>
+            </span>
+          <button class="read-sub-more" id="id-read3" onclick="showmore('3')">Read More</button>
+        
+        </div>
+        <img src="/static/images/img_prb3.jfif" alt="" >
+      </div>
+      <div class="sub1-section">
+        <div class="sub1-text">
+          <h2 class="block-41-heading mb-3">Irregular Periods (Oligomenorrhea)<h2>
+          <p class="text-1">Someone is said to have irregular periods if their menstrual cycle is less than 24 days, lasts longer than 38 days, 
+            or fluctuates greatly from month to month. Doctors refer to this as oligomenorrhea.
+          <br>Particularly for those who are going through adolescence, nursing, or on the verge of menopause, it is typical for the menstrual cycle length to vary slightly from month to month.
+          Stress, drugs, and illnesses related to the mind or body can all alter how frequently a woman gets her period.
+          </br>
+          </p>
+          <span class="text-1" id="sub-head4"> SYMPTOMS AND CAUSES, DIAGNOSIS,PREVENTION, TREATMENT...</span> 
+          <span class="sub-more" id="sub-text-more4">
+          <h4 class="block-41-heading mb-3">Symptoms and Causes</h4>
+          <p class="how-text-row1">The main symptom of irregular periods are menstruation arrving sooner or later,
+            abnormal bleeding, time between periods vary.
+           <br>Irregular periods, or oligomenorrhea, can occur for many reasons. Many relate to hormone levels.If something disrupts or alters how hormones (like estrogen, progestrone and 
+           follicle-stimulating hormone) rise and fall each cycle,it can cause irregular periods.
+           <p class="how-text-row1"><br>Other factors that may contribute to irregular periods include:
+          <br><i>Natural Hormonal shifts</i>: It takes several years for the hormones that regulate periods to fall into a reliable pattern. During this time, it is common to have irregular periods.
+          Oligomenorrhea can also occur after childbirth and while breastfeeding until the hormones return to normal after having a baby.
+          Periods also become irregular during perimenopause, which is the first stage of menopause. During this time, hormone levels begin to fall.</br>
+           <br><i>Hormonal birth control></i>:Hormonal birth control works by stopping ovulation.A person may experience irregular bleeding for the first few months after using such a pill, patch, implant, or hormonal intrauterine device (IUD). 
+           With time, this could either stop totally or grow more frequent.<br>Likewise, irregular periods might result from ceasing to use hormonal birth control. The body's hormonal cycle takes some time to get back to its regular rhythm.
+           After discontinuing birth control pills, most people experience a withdrawal bleed for two to four weeks. Period bleeding follows. The cycle may not settle into a regular rhythm for up to 3 months.
+           <br><i> Eating Disorder</i>:Eating disordersTrusted Source, such as anorexia nervosa, bulimia nervosa, and binge eating disorder, can cause absent or irregular periods. 
+           This is more likely to occur if someone has experienced severe weight loss.
+           <br><i>Mdeical conditions:</i>Some medical conditions like endometriosis, thyroid disease, type 1diabetes, congenital adrenal hyperplasia,
+           hormone-secreting tumors can lead to irregular periods</br>
+          </p>
+          </p>
+          <h4 class="block-41-heading mb-3">Diagnosis</h4>
+            <p class="how-text-row1">Contact your healthcare provider if you have any symptom of irregular period. Depending on your specific symptoms, diagnostic tests may include:
+             <br> PAP test: This test looks for various infections or cancer cells on the cervix.
+              <br>Blood test: Blood tests will detect anemia, blood clotting problems, and thyroid function.
+              <br>Pelvic ultrasound: Pelvic ultrasound will create images of your uterus, ovaries, and pelvis.
+              <br>Endometrial biopsy: If your doctor wants to evaluate potential problems with your uterus, he or she may order an endometrial biopsy. During this procedure, a sample of uterine tissue was taken so that it can be analyzed. They can also use a diagnostic hysteroscopy to view the inside of your uterus. Your doctor will use an enhanced tube to examine the uterus and remove the polyp for a hysteroscopy.
+              <br>Sonohysterogram: A sonohysterogram is an ultrasound that involves injecting fluid into the uterus to help get a picture of the uterine cavity. Then your doctor can look for polyps or fibroids.
+              <br>Pregnancy test: Your doctor may order a pregnancy test.</br>
+            </p>
+          <h4 class="block-41-heading mb-3">Prevention</h4>
+            <p class="how-text-row1">The likelihood of several reasons of irregular menstruation can be decreased by maintaining a healthy lifestyle. 
+              <br>This comprises of maintaining a healthy weight and lowering stress, routinely exercise,eat a balanced diet.
+              <br>Although research has not proved the usefulness of some herbal medicines, including black cohosh, chaste berries, licorice root, and turmeric, they are considered to be helpful. They also may have negative effects.</br>
+            </p>
+            <h4 class="block-41-heading mb-3">Treatment</h4>
+            <p class="how-text-row1">Treatment will depend on your overall health,the reason for your menstrual abnormalities,your reproductive history and plans,
+              doctor will also need to treat any underlying medical conditions, such as thyroid dysfunction.</br>
+            <br>Treatments may include the following:<br><i>Medication:</i>Drug treatments that your doctor may suggest include 
+            Nonsteroidal anti-inflammatory medications (NSAIDs), such as ibuprofen or naproxen, can minimize mild blood loss,iron supplements can treat anemia,
+            Hormone replacement injections can treat hormonal imbalances,Oral contraceptives can regulate your cycle and shorten your periods.
+            <br><i>Medical Procedures:</i><a href="https://en.wikipedia.org/wiki/Dilation_and_curettage">Dilation and curettage</a>,
+            <a href="https://en.wikipedia.org/wiki/Endometrial_ablation">Endometrial abation</a>,<a href="https://en.wikipedia.org/wiki/Hysterectomy"> Hysterectomy</a>.
+            </br>
+            </p>
+            </span>
+          <button class="read-sub-more" id="id-read4" onclick="showmore('4')">Read More</button>
+        
+        </div>
+        <img src="/static/images/img_prb2.jpg" alt="" >
+      </div>
     </div>
-  </div-->
+  </div>
 
   
-  <div class="featured-section overlay-color-2" style="background-image: url('images/bg_2.jpg');">
-    
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-6 mb-5 mb-md-0">
-          <img src="images/bg_2.jpg" alt="Image placeholder" class="img-fluid">
-        </div>
-
-        <div class="col-md-6 pl-md-5">
-
-          <div class="form-volunteer">
-            
-            <h2>Be A Volunteer Today</h2>
-            <form action="#" method="post">
-              <div class="form-group">
-                <!-- <label for="name">Name</label> -->
-                <input type="text" class="form-control py-2" id="name" placeholder="Enter your name">
-              </div>
-              <div class="form-group">
-                <!-- <label for="email">Email</label> -->
-                <input type="text" class="form-control py-2" id="email" placeholder="Enter your email">
-              </div>
-              <div class="form-group">
-                <!-- <label for="v_message">Email</label> -->
-                <textarea name="v_message" id="" cols="30" rows="3" class="form-control py-2" placeholder="Write your message"></textarea>
-                <!-- <input type="text" class="form-control py-2" id="email"> -->
-              </div>
-              <div class="form-group">
-                <input type="submit" class="btn btn-white px-5 py-2" value="Send">
-              </div>
-            </form>
-          </div>
-        </div>
-        
+  <div class="site-section">
+    <div class="row mb-3 justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2>Research and Experimentations </h2>
+        <p> Important Experimentations and published literatures related to menstrual, its hygiene and 
+          and its socital interferences are available below. You can download it if interested.
+        </p>
       </div>
     </div>
-
-  </div> <!-- .featured-donate -->
+  
+  
+    
+    <div class="container"></div>
+    <div class="res-1">
+      <h4>MENSTRUAL DISTRESS IN FEMALES OF REPRODUCTIVE AGE: A LITERATURE REVIEW</h4>
+      <a href="/static/pdfs/maqbool2021.pdf" download><button class="btn btn-primary px-3 py-2">Download Now</button>
+      </div>
+      <div class="res-1">
+      <h4>MENSTRUATION MATTERS: A PUBLISHED ARTICLE STUDYING REPRESENTATIONS OF THE MENSTRUAL CYCLE<h4>
+      <a href="/static/pdfs/menstruation_matters_intro-libre.pdf" download><button class="btn btn-primary px-3 py-2">Download Now</button>
+      </div>
+      <div class="res-1">
+        <h4>MEASUREMENT IN THE STUDY OF MENSTRUAL HEALTH AND HYGIENE: A
+          SYSTEMATIC LITERATURE REVIEW AND AUDIT
+        </h4>
+      <a href="/static/pdfs/Hennegan - Measures in Menstrual Health AUDIT.pdf" download><button class="btn btn-primary px-3 py-2">Download Now</button></a>
+      </div>
+      <div class="res-1">
+      <h4>MENSTRUATION-SCIENCE AND SOCIETY: A JOURNAL<h4>
+      <a href="/static/pdfs/Menstruation_Science_and_Society.pdf" download><button class="btn btn-primary px-3 py-2">Download Now</button><a>
+      </div>
+  </div>
 
   <footer class="footer">
     <div class="container">

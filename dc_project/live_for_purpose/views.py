@@ -8,6 +8,11 @@ def index(request):
 def educateandempower(request):
     return render(request,"educateandempower.html")
 
+
+def donate(request):
+    return render(request,"donate.html")
+
+
 def aboutus(request):
     return render(request,"aboutus.html")
 
@@ -18,3 +23,4 @@ def openpost(request):
     return render(request,"openpost.html")
 
     
+
