@@ -1,0 +1,33 @@
+
+div.row-core{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  
+  
+}
+div.core-card{
+  margin:50px;
+  width:320px;
+  height:270px;
+  box-sizing:border-box;
+  overflow:hidden;
+  border-radius: 10px;
+  background-color: #f2f3f4;
+  padding:10px;
+  box-shadow:2px 7px 10px rgb(11, 11, 10);
+  text-align: center;
+  
+}
+
+.img-pad{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius:50%;
+  transition:1s;
+
+}
+.img-pad:hover{
+  transform:scale(1.2);
+}
