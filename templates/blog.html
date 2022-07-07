@@ -1,0 +1,226 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>INCARNATE &mdash; Let's fight it hand in hand</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,500|Dosis:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}">
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ionicons.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css'%}">
+    <link rel="stylesheet" href="{% static 'css/jquery.timepicker.css'%}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css'%}">
+    <link rel="stylesheet" href="{% static 'css/icomoon.css'%}">
+    <link rel="stylesheet" href="{% static 'css/fancybox.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/button.css'%}?version=55"/>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">INCARNATE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+          </button>
+    
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="{% url 'index' %}" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="{% url 'educateandempower' %}" class="nav-link">Educate and Empower</a></li>
+              <li class="nav-item"><a href="{% url 'donate' %}" class="nav-link">Donate</a></li>
+              <!--li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li-->
+              <li class="nav-item active"><a href="{% url 'blog' %}" class="nav-link">Blog</a></li>
+              <li class="nav-item"><a href="{% url 'aboutus' %}" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- END nav -->
+      
+      <div class="block-31" style="position: relative;">
+        <div class="owl-carousel loop-block-31 ">
+          <div class="block-30 block-30-sm item" style="background-image: url('/static/images/blogbg.jpg');" data-stellar-background-ratio="0.5">
+            <div class="container">
+              <div class="row align-items-center justify-content-center text-center">
+                <div class="col-md-7">
+                  <h2 class="heading mb-5">Let's talk about “it”</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      <div class="site-section bg-light">
+        <div class="container">
+          
+    
+          <div class="row">
+            {% for post in object_list %}
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <div class="post-entry">
+                <a href="{% url 'openpost' post.pk %}" class="mb-3 img-wrap">
+                  <img src="{{post.image.url}}" alt="Image placeholder" class="img-fluid">
+                </a>
+                <h3><a href="#">{{post.title}}</a></h3>
+                <span class="date mb-4 d-block text-muted">July 05, 2022</span>
+                <p>{{post.descript}}</p>
+                <p><a href="#" class="link-underline">Read More</a></p>
+              </div>
+            </div>
+            {% endfor %}
+            <!--div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <div class="post-entry">
+                <a href= "" class="mb-3 img-wrap">
+                  <img src="static/images/bg.jpg" alt="Image placeholder" class="img-fluid">
+                </a>
+                <h3><a href="#">My monthly visitors</a></h3>
+                <span class="date mb-4 d-block text-muted">July 05, 2022</span>
+                <p>Add description here</p>
+                <p><a href="#" class="link-underline">Read More</a></p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <div class="post-entry">
+                <a href= "" class="mb-3 img-wrap">
+                  <img src="static/images/period2i.jpg" alt="Image placeholder" class="img-fluid">
+                </a>
+                <h3><a href="#">Period Poverty</a></h3>
+                <span class="date mb-4 d-block text-muted">July 05, 2022</span>
+                <p>Add description here</p>
+                <p><a href="#" class="link-underline">Read More</a></p>
+              </div>
+            </div-->
+    
+            
+          </div>
+        </div>
+      </div> <!-- .section -->
+    
+    
+      <footer class="footer">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-6 col-lg-4">
+              <h3 class="heading-section">About Us</h3>
+              <p class="lead">Menstruation and its consequent needs have been a topic largely kept under wraps in Indian society. </p>
+              <p class="mb-5">Our vision is to create a sustained space that includes educating, empowering, and engaging women in Indian society, concerning menstruation. </p>
+              <p><a href="{% url 'aboutus' %}" class="link-underline">Read  More</a></p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <h3 class="heading-section">Recent Blogs</h3>
+              <div class="block-21 d-flex mb-4">
+                <figure class="mr-3">
+                  <img src="static/images/period3.jpg" alt="" class="img-fluid">
+                </figure>
+                <div class="text">
+                  <h3 class="heading" style="color:white">The Menstural Cycle</h3>
+                  
+                </div>
+              </div>
+    
+              <div class="block-21 d-flex mb-4">
+                <figure class="mr-3">
+                  <img src="static/images/bg.jpg" alt="" class="img-fluid">
+                </figure>
+                <div class="text">
+                  <h3 class="heading" style="color:white">My monthly visitors</h3>
+                  
+                </div>
+              </div>
+    
+              <div class="block-21 d-flex mb-4">
+                <figure class="mr-3">
+                  <img src="static/images/period2i.jpg" alt="" class="img-fluid">
+                </figure>
+                <div class="text">
+                  <h3 class="heading" style="color:white">Period Poverty</h3>
+                  
+                </div>
+                
+              </div>
+              <p><a href="{% url 'blog' %}" class="link-underline">Read  Blogs</a></p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="block-23">
+                <h3 class="heading-section">Get Connected</h3>
+                  <ul>
+                    <li><span class="icon icon-map-marker"></span><span class="text"><h3 class="heading" style="color:white">Address</h3>
+                      <p>Indian Institute of Technology, Jodhpur
+                        <br>Karwar, Jodhpur 342030
+                       <br>Rajasthan, India</br>
+                      </p></span></li>
+                    
+                    <li><span class="icon icon-envelope"></span><span class="text">
+                      <h3 class="heading" style="color:white">Email-Id</h3>
+                        <p>incarnate.gmail.com
+                        </p>
+                    </span></li>
+                  </ul>
+                </div>
+            </div>
+            
+            
+          </div>
+          <div class="row pt-5">
+            <div class="col-md-12 text-center">
+              <p>
+               
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="ion-ios-heart text-danger" aria-hidden="true"></i> by Team INCARNATE
+                
+                </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+      <!-- loader -->
+      <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    
+
+
+
+
+
+
+
+
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js'%}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js'%}"></script>
+  <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+
+  <script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+  
+  <script src="{% static 'js/aos.js'%}"></script>
+  <script src="{% static 'js/jquery.animateNumber.min.js'%}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{% static 'js/google-map.js'%}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/morecss.js' %}"></script>
+  <scripts src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">   </scripts>
+    
+  </body>
+</html>
