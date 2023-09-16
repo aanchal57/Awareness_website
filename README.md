@@ -5,7 +5,7 @@ Follwing are the steps to run the website on your local machine:
 
 1. Clone the repository to a favourable directory in your computer
 
-2. Go the the folder directory, and type command "python manage.py runserver"
+2. Go the the folder directory, and type command `python manage.py runserver`
 
 3. Run http://127.0.0.1:8000/ on your browser
 
